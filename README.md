@@ -1,13 +1,13 @@
 ##Two-Token Based Web Session Management
 
-See blog (URL to be added) for more information.
+See [HOW_IT_WORKS](HOW_IT_WORKS.md) for more information.
 See the [live demo app](https://ws-codelab.appspot.com).
 
 To deploy your own version web app:
 
 1. Download Apache Maven version 3.1 or greater and then install it.
 
-2. Follow this [tutorial](https://cloud.google.com/appengine/docs/java/gettingstarted/creating) to create a Google App Engine project, and replace the project id in the `<application>` tag in `demo/integrated/src/main/webapp/WEB-INF/appengine-web.xml`. 
+2. Follow this [tutorial](https://cloud.google.com/appengine/docs/java/gettingstarted/creating) to create a Google App Engine project, and replace the project id in the `<application>` tag in `demo/integrated/src/main/webapp/WEB-INF/appengine-web.xml`.
 
 3. Upload the app to App Engine by running `mvn appengine:update` under `demo/integrated` folder.
 
@@ -21,4 +21,3 @@ To deploy your own version web app:
 
 
 __This is not an official Google product.__
-
