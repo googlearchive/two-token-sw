@@ -6,8 +6,9 @@ In the document, we will discuss some best practices to improve web session
 management by leveraging [Service
 Worker](https://www.w3.org/TR/service-workers/).
 
-This doc only cover the non-federated account case, please refer to
-[HOW_IT_WORKS_FD](/HOW_IT_WORKS_FD.md) for the federated account case.
+<!--
+This doc only cover the non-federated account case, please refer to [HOW_IT_WORKS_FD](/HOW_IT_WORKS_FD.md) for the federated account case.
+-->
 
 ### Objectives
 
@@ -203,8 +204,11 @@ the format defined in this doc would allow the website:
 
 * Easily integrating two-token model by leveraging open-sourced libraries, which
  are based on these data structure definitions.
+
+<!--
 * Compatible with federated signon accounts. More details at
  [HOW_IT_WORKS_FD](/HOW_IT_WORKS_FD.md).
+ -->
 
 
 LAT is a stateless [JWT](https://tools.ietf.org/html/rfc7519) token, which
