@@ -156,7 +156,7 @@ in the payload. Below is an example of the payload. (For illustration only,
 later in this doc, in dedicated sections, we will discuss the format of binding
 token.)
 
-```json
+```js
 {
    "iss": "anIDP",                       // IDP name
    "url": "https://idp.com/token",       // The URL to get ID token.
@@ -167,7 +167,7 @@ token.)
 
 The opaque binding ID is an encrypted string with below information.
 
-```json
+```js
 {
    "sub": "1234567890",                 // user ID
    "aud": "https://www.example.com",    // Domain or OAuth 2 client ID

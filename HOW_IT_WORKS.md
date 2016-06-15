@@ -227,13 +227,13 @@ origin.
 LAT will use unsecured JWT format, since it is already secured by the HTTPS
 layer.  The JOSE Header should be:
 
-```json
+```js
 {"alg": "none"}
 ```
 
 Below is an example of decoded LAT token payload.
 
-```json
+```js
 {
    "iss": "anIDP",                       // Optional IDP name
    "url": "https://example.com/token",   // Token Endpoint URL.
@@ -251,7 +251,7 @@ The 'lat' string is an encrypted string, which contains below information to be
 consumed by the Token Endpoint. These information are opaque to the client side
 (since they are encrypted).
 
-``` json
+```js
 {
    "sub": "1234567890",                 // Subject
    "aud": "https://www.example.com",    // Audience
@@ -439,7 +439,7 @@ is provided in the dosidos library:
  decide whether SAT should be refreshed or not.
 * Below is the data structure used in the indexedDB:
 
-```java
+```js
 /*
  * Data structure for two-token web session status information.
  * @typedef {{
@@ -473,7 +473,7 @@ is provided in the dosidos library:
 * To suspend the service worker, just clear the session state stored in the
  indexedDB. Below code can be used:
 
-```java
+```js
 dosidos.store.clear().then();
 ```
 
